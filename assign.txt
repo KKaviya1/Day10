@@ -1,0 +1,86 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Text.RegularExpressions;
+using System.Threading.Tasks;
+
+namespace Assignment12
+{
+    internal class Program
+    {
+        static int CountWords(string input)
+        {
+            return input.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).Length;
+        }
+
+        static List<string> ValidateEmailAddress(string input)
+        {
+            List<string> emailAddress = new List<string>();
+            string pattern = @"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b";
+            MatchCollection matches = Regex.Matches(input, pattern);
+            foreach (Match match in matches)
+            {
+                emailAddress.Add(match.Value);
+            }
+            return emailAddress;
+        }
+
+        static List<string> ExtractMobileNumbers(string input)
+        {
+            List<string> mobileNumbers = new List<string>();
+            string pattern = @"\b\d{10}\b";
+            MatchCollection matches = Regex.Matches(input, pattern);
+            foreach (Match match in matches)
+            {
+                mobileNumbers.Add(match.Value);
+            }
+            return mobileNumbers;
+        }
+
+        static List<string> PerformCustomRegexSearch(string input, string customRegexPattern)
+        {
+            List<string> customRegexMatches = new List<string>();
+            MatchCollection matches = Regex.Matches(input, customRegexPattern);
+            foreach (Match match in matches)
+            {
+                customRegexMatches.Add(match.Value);
+            }
+            return customRegexMatches;
+        }
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter a piece of text:");
+            string inputText = Console.ReadLine();
+
+            int wordCount = CountWords(inputText);
+            Console.WriteLine($"Word Count: {wordCount}");
+
+            List<string> emailaddress = ValidateEmailAddress(inputText);
+            Console.WriteLine("E-mail address:");
+            foreach (string email in emailaddress)
+            {
+                Console.WriteLine(email);
+            }
+
+            List<string> mobileNumbers = ExtractMobileNumbers(inputText);
+            Console.WriteLine("Mobile Number:");
+            foreach (string mobileNumber in mobileNumbers)
+            {
+                Console.WriteLine(mobileNumber);
+            }
+
+            Console.WriteLine("Enter a custom regex:");
+            string customRegexPattern = Console.ReadLine();
+            List<string> customRegexMatches = PerformCustomRegexSearch(inputText, customRegexPattern);
+            Console.WriteLine("Custom Regex:");
+            foreach (string match in customRegexMatches)
+            {
+                Console.WriteLine(match);
+            }
+            Console.ReadKey();
+        }
+    }
+}
+

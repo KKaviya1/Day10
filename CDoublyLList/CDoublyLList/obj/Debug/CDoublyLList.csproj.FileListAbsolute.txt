@@ -1,0 +1,8 @@
+F:\Day - 10\CDoublyLList\CDoublyLList\bin\Debug\CDoublyLList.exe.config
+F:\Day - 10\CDoublyLList\CDoublyLList\bin\Debug\CDoublyLList.exe
+F:\Day - 10\CDoublyLList\CDoublyLList\bin\Debug\CDoublyLList.pdb
+F:\Day - 10\CDoublyLList\CDoublyLList\obj\Debug\CDoublyLList.csproj.AssemblyReference.cache
+F:\Day - 10\CDoublyLList\CDoublyLList\obj\Debug\CDoublyLList.csproj.SuggestedBindingRedirects.cache
+F:\Day - 10\CDoublyLList\CDoublyLList\obj\Debug\CDoublyLList.csproj.CoreCompileInputs.cache
+F:\Day - 10\CDoublyLList\CDoublyLList\obj\Debug\CDoublyLList.exe
+F:\Day - 10\CDoublyLList\CDoublyLList\obj\Debug\CDoublyLList.pdb

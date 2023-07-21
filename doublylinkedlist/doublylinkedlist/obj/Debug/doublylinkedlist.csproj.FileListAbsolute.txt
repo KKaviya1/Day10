@@ -1,0 +1,8 @@
+F:\Day - 10\doublylinkedlist\doublylinkedlist\bin\Debug\doublylinkedlist.exe.config
+F:\Day - 10\doublylinkedlist\doublylinkedlist\bin\Debug\doublylinkedlist.exe
+F:\Day - 10\doublylinkedlist\doublylinkedlist\bin\Debug\doublylinkedlist.pdb
+F:\Day - 10\doublylinkedlist\doublylinkedlist\obj\Debug\doublylinkedlist.csproj.AssemblyReference.cache
+F:\Day - 10\doublylinkedlist\doublylinkedlist\obj\Debug\doublylinkedlist.csproj.SuggestedBindingRedirects.cache
+F:\Day - 10\doublylinkedlist\doublylinkedlist\obj\Debug\doublylinkedlist.csproj.CoreCompileInputs.cache
+F:\Day - 10\doublylinkedlist\doublylinkedlist\obj\Debug\doublylinkedlist.exe
+F:\Day - 10\doublylinkedlist\doublylinkedlist\obj\Debug\doublylinkedlist.pdb
